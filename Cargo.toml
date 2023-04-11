@@ -1,0 +1,17 @@
+[package]
+name = "cleanup"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+notify-rust = "4"
+chrono = "0.4.24"
+walkdir = "2.3.3"
+dirs = "5.0"
+tray-icon = "0.4.4"
+winit = "0.28.3"
+image = "0.24.6"
+winapi = {version = "0.3", features = ["wincon", "winuser"]}
